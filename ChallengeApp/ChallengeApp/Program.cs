@@ -1,24 +1,46 @@
-﻿var number1 = 15;
-var number2 = 10;
+﻿// Zadanie domowe #4
 
-// ==  != < > <= >=
+var name = "Ewa";
+int age = 33;
+bool woman = true;
 
-var name = "Eryk";
-var age = 57;
-
-// && znaczy się "i"
-// || znaczy się "lub" 
-// ! negacja - odwracanie (!(age < 50))
-
-if (age <= 57)
+// Jeśli to jest kobieta
+if (woman == true)
 {
-    Console.WriteLine("Jestem mlody");
+    // Jeśli Ewa
+    if (name == "Ewa" && age == 33)
+    {
+        Console.WriteLine("Ewa, lat 33");
+    }
+    else if (name == "Ewa" && age < 33)
+    {
+        Console.WriteLine("Ewa, wiek poniżej 33 lat");
+    }
+    if (name == "Ewa" && age > 33)
+    {
+        Console.WriteLine("Ewa, powyżej 33 lat");
+    }
+
+    // Jeśli nie Ewa
+    if (name != "Ewa" && age < 33)
+    {
+        Console.WriteLine("Kobieta, poniżej 33 lat");
+    }
+    else if (name != "Ewa" && age >= 33)
+    {
+        Console.WriteLine("Kobieta, w wieku 33 lat lub powyżej");
+    }
 }
-else if (age >= 58)
+
+// Jeśli to nie jest kobieta   
+if (woman == false)
 {
-    Console.WriteLine("Jestem sredni");
-}
-else if (age > 61)
-{
-    Console.WriteLine("Jestem stary dziad");
+    if (age < 18)
+    {
+        Console.WriteLine("Mężczyzna niepełnoletni");
+    }
+    else if (age >= 18)
+    {
+        Console.WriteLine("To jest jakiś stary dziad...");
+    }
 }
