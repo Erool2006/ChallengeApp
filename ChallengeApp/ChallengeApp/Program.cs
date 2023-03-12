@@ -1,46 +1,73 @@
-﻿// Zadanie domowe #4
+﻿//Zadanie domowe #5
 
-var name = "Ewa";
-int age = 33;
-bool woman = true;
+int number = 89653334;
+string numberAsString = number.ToString();
+char[] numbers = numberAsString.ToArray();
 
-// Jeśli to jest kobieta
-if (woman == true)
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
+
+foreach (char digit in numbers)
 {
-    // Jeśli Ewa
-    if (name == "Ewa" && age == 33)
+    if (digit == '0')
     {
-        Console.WriteLine("Ewa, lat 33");
+        counter0++;
     }
-    else if (name == "Ewa" && age < 33)
+    else if (digit == '1')
     {
-        Console.WriteLine("Ewa, wiek poniżej 33 lat");
+        counter1++;
     }
-    if (name == "Ewa" && age > 33)
+    else if (digit == '2')
     {
-        Console.WriteLine("Ewa, powyżej 33 lat");
+        counter2++;
     }
-
-    // Jeśli nie Ewa
-    if (name != "Ewa" && age < 33)
+    else if (digit == '3')
     {
-        Console.WriteLine("Kobieta, poniżej 33 lat");
+        counter3++;
     }
-    else if (name != "Ewa" && age >= 33)
+    else if (digit == '4')
     {
-        Console.WriteLine("Kobieta, w wieku 33 lat lub powyżej");
+        counter4++;
+    }
+    else if (digit == '5')
+    {
+        counter5++;
+    }
+    else if (digit == '6')
+    {
+        counter6++;
+    }
+    else if (digit == '7')
+    {
+        counter7++;
+    }
+    else if (digit == '8')
+    {
+        counter8++;
+    }
+    else if (digit == '9')
+    {
+        counter9++;
     }
 }
+Console.WriteLine("W liczbie " + number);
+Console.WriteLine("znajduje się następująca ilość cyfr:");
 
-// Jeśli to nie jest kobieta   
-if (woman == false)
-{
-    if (age < 18)
-    {
-        Console.WriteLine("Mężczyzna niepełnoletni");
-    }
-    else if (age >= 18)
-    {
-        Console.WriteLine("To jest jakiś stary dziad...");
-    }
-}
+Console.WriteLine("Dla 0 => " + counter0);
+Console.WriteLine("Dla 1 => " + counter1);
+Console.WriteLine("Dla 2 => " + counter2);
+Console.WriteLine("Dla 3 => " + counter3);
+Console.WriteLine("Dla 4 => " + counter4);
+Console.WriteLine("Dla 5 => " + counter5);
+Console.WriteLine("Dla 6 => " + counter6);
+Console.WriteLine("Dla 7 => " + counter7);
+Console.WriteLine("Dla 8 => " + counter8);
+Console.WriteLine("Dla 9 => " + counter9);
